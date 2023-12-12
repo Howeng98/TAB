@@ -27,36 +27,36 @@ This is our proposed well-organized dataset for industrial visual inspection.
   ### Dataset Sources
   Idx | Class Name | Number of normal samples  | Source | Description
   :-- | :--| :--| :--| :--|
-  1 | Bent Metal Stripe   | :heavy_check_mark: | x | x |
-  2 | Board | :heavy_check_mark: | x | x |
-  3 | Bolt | :heavy_check_mark: | x | x |
-  4 | Bottle | :heavy_check_mark: | x | x |
-  5 | Brick Tile | :heavy_check_mark: | x | x |
-  6 | Capsule | :heavy_check_mark: | x | x |
-  7 | Chip | :heavy_check_mark: | x | x |
-  8 | Cork | :heavy_check_mark: | x | x |
-  9 | Encapsulates Carpet | :heavy_check_mark: | x | x |
-  10 | Hazelnut | :heavy_check_mark: | x | x |
-  11 | Hazelnut Toy | :heavy_check_mark: | x | x |
-  12 | Jagged Carpet | :heavy_check_mark: | x | x |
-  13 | Leather | :heavy_check_mark: | x | x |
-  14 | Metal Flat | :heavy_check_mark: | x | x |
-  15 | Metal ornament | :heavy_check_mark: | x | x |
-  16 | Metal Pole| :heavy_check_mark: | x | x |
-  17 | Metal Tube | :heavy_check_mark: | x | x |
-  18 | Plaid | :heavy_check_mark: | x | x |
-  19 | Rhombus Carpet | :heavy_check_mark: | x | x |
-  20 | Screw | :heavy_check_mark: | x | x |
-  21 | Solar Board | :heavy_check_mark: | x | x |
-  22 | Sponge | :heavy_check_mark: | x | x |
-  23 | Streak Board | :heavy_check_mark: | x | x |
-  24 | Stripe Carpet | :heavy_check_mark: | x | x |
-  25 | Stripe Wood | :heavy_check_mark: | x | x |
-  26 | Tile | :heavy_check_mark: | x | x |
-  27 | Toy Wheel | :heavy_check_mark: | x | x |
-  28 | Upholstery | :heavy_check_mark: | x | x |
-  29 | Washer | :heavy_check_mark: | x | x |
-  30 | Wave Carpet | :heavy_check_mark: | x | x |
+  1 | Bent Metal Stripe   | 185 | x | x |
+  2 | Board | 40 | x | x |
+  3 | Bolt | 128 | x | x |
+  4 | Bottle | 746 | x | x |
+  5 | Brick Tile | 80 | x | x |
+  6 | Capsule | 749 | x | x |
+  7 | Chip | 1211 | x | x |
+  8 | Cork | 216 | x | x |
+  9 | Encapsulates Carpet | 728 | x | x |
+  10 | Hazelnut | 50 | x | x |
+  11 | Hazelnut Toy | 34 | x | x |
+  12 | Jagged Carpet | 80 | x | x |
+  13 | Leather | 600 | x | x |
+  14 | Metal Flat | 54 | x | x |
+  15 | Metal ornament | 289 | x | x |
+  16 | Metal Pole| 110 | x | x |
+  17 | Metal Tube | 122 | x | x |
+  18 | Plaid | 20 | x | x |
+  19 | Rhombus Carpet | 80 | x | x |
+  20 | Screw | 59 | x | x |
+  21 | Solar Board | 2624 | x | x |
+  22 | Sponge | 40 | x | x |
+  23 | Streak Board | 1041 | x | x |
+  24 | Stripe Carpet | 336 | x | x |
+  25 | Stripe Wood | 1000 | x | x |
+  26 | Tile | 230 | x | x |
+  27 | Toy Wheel | 3200 | x | x |
+  28 | Upholstery | 20 | x | x |
+  29 | Washer | 3241 | x | x |
+  30 | Wave Carpet | 80 | x | x |
 
   
   ### NTHU CVLAB
