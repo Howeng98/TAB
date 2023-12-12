@@ -3,6 +3,10 @@
   <img src='imgs/industrial_dataset_samples.png' width="800px">
 </p>
 
+## Anomaly Backbone Checkpoint Download  
+  - MVTecAD ResNet18: [Download Link](https://drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8?usp=sharing)
+  - IndustrialDataset ResNet18: [Download Link](https://drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS?usp=sharing)
+
 ## Industrial Dataset
 This is our proposed well-organized dataset for industrial visual inspection.
 
