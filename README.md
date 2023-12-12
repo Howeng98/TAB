@@ -25,7 +25,12 @@ This is our proposed well-organized dataset for industrial visual inspection.
   ```
 
   ### Dataset Sources
-  
+  Idx | Content | State | Note
+  :------------ | :-------------| :-------------| :-------------
+  1 | Metal Plat | :heavy_check_mark: | 
+  2 | Metal Tube | :heavy_check_mark: | 
+  3 | Hazelnut   | :heavy_check_mark: |
+
   
   ### NTHU CVLAB
   For more details, please visit [CVLAB](https://cv.cs.nthu.edu.tw/).
