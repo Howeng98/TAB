@@ -1,6 +1,6 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
 <p align="center">
-  <img src='imgs/industrial_dataset_samples.png'>
+  <img src='imgs/industrial_dataset_samples.png' width="800px">
 </p>
 
 ## Industrial Dataset
