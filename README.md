@@ -25,11 +25,38 @@ This is our proposed well-organized dataset for industrial visual inspection.
   ```
 
   ### Dataset Sources
-  Idx | Content | State | Note
-  :------------ | :-------------| :-------------| :-------------
-  1 | Metal Plat | :heavy_check_mark: | 
-  2 | Metal Tube | :heavy_check_mark: | 
-  3 | Hazelnut   | :heavy_check_mark: |
+  Idx | Class Name | Number of normal samples  | Source | Description
+  :-- | :--| :--| :--| :--|
+  1 | Bent Metal Stripe   | :heavy_check_mark: | x | x |
+  2 | Board | :heavy_check_mark: | x | x |
+  3 | Bolt | :heavy_check_mark: | x | x |
+  4 | Bottle | :heavy_check_mark: | x | x |
+  5 | Brick Tile | :heavy_check_mark: | x | x |
+  6 | Capsule | :heavy_check_mark: | x | x |
+  7 | Chip | :heavy_check_mark: | x | x |
+  8 | Cork | :heavy_check_mark: | x | x |
+  9 | Encapsulates Carpet | :heavy_check_mark: | x | x |
+  10 | Hazelnut | :heavy_check_mark: | x | x |
+  11 | Hazelnut Toy | :heavy_check_mark: | x | x |
+  12 | Jagged Carpet | :heavy_check_mark: | x | x |
+  13 | Leather | :heavy_check_mark: | x | x |
+  14 | Metal Flat | :heavy_check_mark: | x | x |
+  15 | Metal ornament | :heavy_check_mark: | x | x |
+  16 | Metal Pole| :heavy_check_mark: | x | x |
+  17 | Metal Tube | :heavy_check_mark: | x | x |
+  18 | Plaid | :heavy_check_mark: | x | x |
+  19 | Rhombus Carpet | :heavy_check_mark: | x | x |
+  20 | Screw | :heavy_check_mark: | x | x |
+  21 | Solar Board | :heavy_check_mark: | x | x |
+  22 | Sponge | :heavy_check_mark: | x | x |
+  23 | Streak Board | :heavy_check_mark: | x | x |
+  24 | Stripe Carpet | :heavy_check_mark: | x | x |
+  25 | Stripe Wood | :heavy_check_mark: | x | x |
+  26 | Tile | :heavy_check_mark: | x | x |
+  27 | Toy Wheel | :heavy_check_mark: | x | x |
+  28 | Upholstery | :heavy_check_mark: | x | x |
+  29 | Washer | :heavy_check_mark: | x | x |
+  30 | Wave Carpet | :heavy_check_mark: | x | x |
 
   
   ### NTHU CVLAB
