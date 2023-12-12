@@ -1,14 +1,19 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
-<p align="center">
-  <img src='imgs/industrial_dataset_samples.png' width="800px">
-</p>
+
 
 ## Anomaly Backbone Checkpoint Download  
   - MVTecAD ResNet18: [Download Link](https://drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8?usp=sharing)
   - IndustrialDataset ResNet18: [Download Link](https://drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS?usp=sharing)
 
+
+
 ## Industrial Dataset
-This is our proposed well-organized dataset for industrial visual inspection.
+We propose a well-organized dataset for industrial visual inspection named Industrial Dataset. This dataset was constructed by selectively aggregating open-source
+datasets from global websites and official public conference workshops as references. The Industrial Dataset encompasses 30 categories, including 15
+object categories and 15 texture categories, amounting to a total of 17,393 images. Notably, the Industrial dataset exclusively comprises normal images.
+<p align="center">
+  <img src='imgs/industrial_dataset_samples.png' width="800px">
+</p>
 
   ### Dataset Structure
   ```clike=
