@@ -2,7 +2,7 @@
 
   <p align="center">
       <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
-      <a href='https://github.com/howeng98/TAB'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Howeng98/d6d581667cb1cd94ddf763309b8c4cce/raw/clone.json&logo=github'></a>
+      <a href='https://github.com/howeng98/TAB'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Howeng98/f7cba3b9108e627e064215b7ebbcec1f/raw/clone.json&logo=github'></a>
   </p>
 
   <p align="center">
