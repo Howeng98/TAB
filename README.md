@@ -3,8 +3,7 @@
   <p align="center">
       <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
       <a href='https://github.com/howeng98/TAB'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Howeng98/f7cba3b9108e627e064215b7ebbcec1f/raw/clone.json&logo=github'></a>
-      <img alt="ViewCount" src="https://hits.sh/drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8.svg">  
-<!--     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=clicked&edge_flat=false"/></a> -->
+      <a href="https://hits.sh/drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS/"><img alt="Hits" src="https://hits.sh/drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS.svg?color=007ec6"/></a>
   </p>
 
   <p align="center">
