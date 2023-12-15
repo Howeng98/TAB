@@ -1,4 +1,8 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
+  <p align="center">
+    <img src='imgs/TAB_framework.png'>
+  </p>
+
   
   ### Installation:
   ```
