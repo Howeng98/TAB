@@ -1,9 +1,10 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
 
   <p align="center">
-      <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
+      <img alt="ViewCount" src="https://hits.sh/drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8.svg">
       <a href='https://github.com/howeng98/TAB'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Howeng98/f7cba3b9108e627e064215b7ebbcec1f/raw/clone.json&logo=github'></a>
       <a href="https://hits.sh/drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS/"><img alt="Hits" src="https://hits.sh/drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS.svg?color=007ec6"/></a>
+    
   </p>
 
   <p align="center">
