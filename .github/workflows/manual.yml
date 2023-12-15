@@ -2,7 +2,7 @@ name: TAB Clone Count Track
 
 on:
   schedule:
-    - cron: "*/60 * * * *"
+    - cron: "0 */24 * * *"
   workflow_dispatch:
 
 jobs:
