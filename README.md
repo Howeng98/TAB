@@ -1,9 +1,25 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
-
+  
+  ### Installation:
+  ```
+  git clone git@github.com:Howeng98/TAB.git
+  cd TAB
+  conda create -n TAB
+  conda activate TAB
+  pip install -r requirements.txt
+  ```
+  
+  ### Pre-training
+  You can kindly modify the pre-training dataset, backbone structure, and hyperparameters in the config.py 
+  ```
+  python main.py
+  ```
 
 ## Anomaly Backbone Checkpoint Download  
-  - MVTecAD ResNet18: [Download Link](https://drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8?usp=sharing)
-  - IndustrialDataset ResNet18: [Download Link](https://drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS?usp=sharing)
+  |   Description  | Weights Download |
+  | :------------: | :--------------: |
+  | MVTecAD ResNet18 | [Download Link](https://drive.google.com/drive/folders/1T-SRSi5D_dyvJ-HqAEtiHGYdiWfJ6_q8?usp=sharing) |
+  | IndustrialDataset ResNet18 | [Download Link](https://drive.google.com/drive/folders/1knOHNj5U5Ya6qRjhD3hUo-K4F_BTg0YS?usp=sharing) |
 
 
 
@@ -89,6 +105,7 @@ object categories and 15 texture categories, amounting to a total of 17,393 imag
   - [Leather Defect Classification](https://www.kaggle.com/datasets/praveen2084/leather-defect-classification)
 
 ### Citation
+If you found TAB useful in your research or applications, please kindly cite using the following BibTeX:
 ```
 Please cite from this section
 ```
