@@ -120,12 +120,10 @@ object categories and 15 texture categories, amounting to a total of 17,393 imag
 ### Citation
 If you found TAB useful in your research or applications, please kindly cite using the following BibTeX:
 ```
-@misc{lee2023tab,
-      title={TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks}, 
-      author={Ho-Weng Lee and Shang-Hong Lai},
-      year={2023},
-      eprint={2312.09480},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{lee2023tab,
+  title={TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks},
+  author={Lee, Ho-Weng and Lai, Shang-Hong},
+  journal={arXiv preprint arXiv:2312.09480},
+  year={2023}
 }
 ```
