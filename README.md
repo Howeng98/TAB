@@ -1,6 +1,6 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
 
-  [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/1234.56789)  <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
+  [![arXiv](https://img.shields.io/badge/arXiv-2312.09480-b31b1b.svg)]([https://arxiv.org/abs/1234.56789](https://arxiv.org/abs/2312.09480))  <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
   
 
   <p align="center">
