@@ -1,9 +1,7 @@
 # TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks
 
-  <p align="center">
-      <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
-      <a href='https://github.com/howeng98/TAB'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Howeng98/f7cba3b9108e627e064215b7ebbcec1f/raw/clone.json&logo=github'></a>
-  </p>
+  [![arXiv](https://img.shields.io/badge/arXiv-2312.09480-b31b1b.svg)](https://arxiv.org/abs/2312.09480) <img alt="ViewCount" src="https://views.whatilearened.today/views/github/howeng98/TAB.svg">
+  
 
   <p align="center">
     <img src='imgs/TAB_framework.png'>
@@ -117,5 +115,10 @@ object categories and 15 texture categories, amounting to a total of 17,393 imag
 ### Citation
 If you found TAB useful in your research or applications, please kindly cite using the following BibTeX:
 ```
-Please cite from this section
+@article{lee2023tab,
+  title={TAB: Text-Align Anomaly Backbone Model for Industrial Inspection Tasks},
+  author={Lee, Ho-Weng and Lai, Shang-Hong},
+  journal={arXiv preprint arXiv:2312.09480},
+  year={2023}
+}
 ```
