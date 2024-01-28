@@ -3,15 +3,16 @@ import cv2
 import torch
 import numpy as np
 import imgaug.augmenters as iaa
-
+import sys
+sys.path.append("./scripts")
 from PIL import ImageFile, Image
 from glob import glob
 from torchvision import transforms
 from utils import select_another_image_from_same_class, set_class_label
-from scripts.self_sup_tasks import patch_ex
-from scripts.perlin import rand_perlin_2d_np
-from scripts.gen_mask import gen_mask
-from scripts.cutpaste import CutPasteUnion
+from self_sup_tasks import patch_ex
+from perlin import rand_perlin_2d_np
+from gen_mask import gen_mask
+from cutpaste import CutPasteUnion
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 

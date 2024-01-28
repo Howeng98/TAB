@@ -1,5 +1,6 @@
 from torch.utils.tensorboard import SummaryWriter
-
+import sys
+sys.path.append("./scripts")
 import os
 import cv2
 import torch
@@ -11,7 +12,7 @@ from torch.utils.data import DataLoader
 
 from model import Main_Backbone
 from utils import save_config_file, count_parameters, save_grid_image
-from TAB.scripts.mvtec import MVTecDataset
+from mvtec import MVTecDataset
 from prompt_ensemble import encode_text_with_prompt_ensemble
 from open_clip import *
 from padim import padim_eval
@@ -94,7 +95,17 @@ def train(train_dataset, train_loader, args):
             z = z.to(args.device)
             mask = mask.to(args.device)
             class_label = class_label.long().to(args.device)        
-                        
+            
+            #visualization synthetic images
+            for idx in range(10):
+                save_grid_image([z[idx]], './imgs/dataloader_outputs'+str(idx)+'.png')
+                try:
+                    gt = cv2.cvtColor(mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255, cv2.COLOR_GRAY2BGR)    
+                except:
+                    gt = mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255
+                cv2.imwrite('./imgs/dataloader_gt'+str(idx)+'.png', gt)
+            exit()
+            
             normal_CNN_visual_feat, abnormal_CNN_visual_feat = model(x, z) 
             
             # clip visual encoder            

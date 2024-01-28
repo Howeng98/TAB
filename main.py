@@ -1,3 +1,5 @@
+import sys
+sys.path.append("./scripts")
 import os
 import random
 import torch
@@ -9,7 +11,7 @@ from train import train
 from config import get_args
 from dataloader import Manufacturing_dataset
 from utils import DataLoaderX, Repeat, setup_seed
-from scripts.constant import SETTINGS
+from constant import SETTINGS
 warnings.filterwarnings('ignore')
 
 def main(args):        

@@ -17,7 +17,7 @@ def get_args():
     parser.add_argument('--workers', default=16, type=int)
     parser.add_argument('--epochs', default=100, type=int)
     parser.add_argument('--lr', type=float, default=0.001)
-    parser.add_argument('--batch-size', type=int, default=128)
+    parser.add_argument('--batch-size', type=int, default=16)
     parser.add_argument('--input-size', default=224)
     parser.add_argument('--gpu-index', default=0, type=int)
     
