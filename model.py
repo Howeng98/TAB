@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from resnet import resnet18, wide_resnet50_2
+from resnet import resnet18, resnet50, wide_resnet50_2
 
 class Main_Backbone(nn.Module):
     def __init__(self, backbone_name, text_input_dim, visual_input_dim, out_dim):
@@ -31,6 +31,8 @@ class Main_Backbone(nn.Module):
             self.backbone = resnet18(pretrained=True)
         elif self.backbone_name == 'wide_resnet50_2':
             self.backbone = wide_resnet50_2(pretrained=True)
+        elif self.backbone_name == 'resnet50':
+            self.backbone = resnet50(pretrained=True)
         else:
             raise RuntimeError(f'{self.backbone_name} is not found.')
         
@@ -39,7 +41,10 @@ class Main_Backbone(nn.Module):
 
     def forward(self, x, z):
         self.normal_CNN_visual_feat   = self.backbone(x)[-1]
+        self.normal_CNN_visual_feat   = self.normal_image_projection_head(self.normal_CNN_visual_feat)
         self.abnormal_CNN_visual_feat = self.backbone(z)[-1]
+        self.abnormal_CNN_visual_feat   = self.abnormal_image_projection_head(self.abnormal_CNN_visual_feat)
+        
         self.normal_CNN_visual_feat = F.normalize(self.normal_CNN_visual_feat, p=2)
         self.abnormal_CNN_visual_feat = F.normalize(self.abnormal_CNN_visual_feat, p=2)
                         
@@ -67,6 +72,7 @@ class Main_Backbone(nn.Module):
         return mixed_features
         
     def cal_loss(self, z1, z2, labels):
+        # print(z1.shape, z2.shape)
         logits = self.cal_logits(z1, z2)        
         return F.cross_entropy(logits, labels)
     

@@ -13,7 +13,7 @@ def get_args():
     parser.add_argument('--dataset', default='MvTecAD', choices=['MvTecAD', 'Industrial_dataset'])
 
     # Hyperparameters
-    parser.add_argument('--backbone-name', default='resnet18', choices=['resnet18', 'resnet34', 'resnet50', 'wide_resnet50_2'])
+    parser.add_argument('--backbone-name', default='resnet50', choices=['resnet18', 'resnet34', 'resnet50', 'wide_resnet50_2'])
     parser.add_argument('--workers', default=16, type=int)
     parser.add_argument('--epochs', default=100, type=int)
     parser.add_argument('--lr', type=float, default=0.001)

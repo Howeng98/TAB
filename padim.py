@@ -22,7 +22,7 @@ import warnings
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from torchvision.models import wide_resnet50_2, resnet18
+from torchvision.models import wide_resnet50_2, resnet18, resnet50
 # from torchvision.models import wide_resnet50_2, Wide_ResNet50_2_Weights, resnet18, ResNet18_Weights, resnet50, ResNet50_Weights
 
 from utils import visualize_tsne
@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument('--data_path', type=str, default='../MvTecAD')
     parser.add_argument('--save_path', type=str, default='./mvtec_result')
     parser.add_argument('--note', type=str, default='None')
-    parser.add_argument('--arch', type=str, choices=['resnet18', 'wide_resnet50_2'], default='resnet18')
+    parser.add_argument('--arch', type=str, choices=['resnet18', 'wide_resnet50_2'], default='resnet50')
     return parser.parse_args()
 
 
@@ -65,8 +65,8 @@ def padim_eval(ckpt_dir, CLASS_NAMES, train_loader_list, test_loader_list):
         model.load_state_dict(ckpt, strict=True)
         t_d = 448
         d = 100
-    elif args.arch == 'wide_resnet50_2':
-        model = wide_resnet50_2(progress=True)
+    elif args.arch == 'resnet50':
+        model = resnet50(progress=True)
         print("Model: {} | Checkpoint path: {}".format(args.arch, ckpt_dir))
         ckpt = torch.load(ckpt_dir, map_location=device)
         model.load_state_dict(ckpt, strict=True)
