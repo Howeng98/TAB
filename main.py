@@ -47,7 +47,7 @@ def main(args):
         num_workers=args.workers,
         batch_size=args.batch_size,
         drop_last=True,
-        shuffle=True,
+        shuffle=False,
     )    
     with torch.cuda.device(args.gpu_index):
         train(train_dataset, train_loader, args)

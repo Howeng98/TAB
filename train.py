@@ -6,6 +6,7 @@ import cv2
 import torch
 import datetime
 import logging
+import numpy as np
 
 from tqdm import tqdm
 from torch.utils.data import DataLoader
@@ -16,7 +17,6 @@ from mvtec import MVTecDataset
 from prompt_ensemble import encode_text_with_prompt_ensemble
 from open_clip import *
 from padim import padim_eval
-
 
 def train(train_dataset, train_loader, args):
                         
@@ -29,7 +29,7 @@ def train(train_dataset, train_loader, args):
     save_config_file(writer.log_dir, args)
     
     # Model
-    model = Main_Backbone(args.backbone_name, text_input_dim=512, visual_input_dim=2048, out_dim=512)
+    model = Main_Backbone(args.backbone_name, text_input_dim=512, visual_input_dim=512, out_dim=512)
     
     
     model_clip, _, preprocess = create_model_and_transforms(args.model, args.input_size, pretrained=args.pretrained, jit=False)
@@ -89,22 +89,24 @@ def train(train_dataset, train_loader, args):
         model.train_mode()
         tqdm_obj = tqdm(train_loader)                
         losses = []                        
-                
+        count = 0
         for x, z, class_names, class_label, mask in tqdm_obj:
             x = x.to(args.device)
             z = z.to(args.device)
             mask = mask.to(args.device)
             class_label = class_label.long().to(args.device)        
             
-            #visualization synthetic images
-            # for idx in range(10):
-            #     save_grid_image([z[idx]], './imgs/dataloader_outputs'+str(idx)+'.png')
-            #     try:
-            #         gt = cv2.cvtColor(mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255, cv2.COLOR_GRAY2BGR)    
-            #     except:
-            #         gt = mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255
-            #     cv2.imwrite('./imgs/dataloader_gt'+str(idx)+'.png', gt)
-            # exit()
+            # count += 1
+            # if count > 30:
+            #     #visualization synthetic images            
+            #     for idx in range(10):
+            #         save_grid_image([z[idx]], './imgs/Mask/dataloader_outputs'+str(idx)+'.png')
+            #         # try:
+            #         #     gt = cv2.cvtColor(mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255, cv2.COLOR_GRAY2BGR)    
+            #         # except:
+            #         #     gt = mask.permute(0, 2, 3, 1).cpu().numpy()[idx] * 255
+            #         # cv2.imwrite('./imgs/NSA/dataloader_gt'+str(idx)+'.png', gt)
+            #     exit()
             
             normal_CNN_visual_feat, abnormal_CNN_visual_feat = model(x, z) 
             
@@ -128,12 +130,12 @@ def train(train_dataset, train_loader, args):
         checkpoint_path = model.save_checkpoint(writer, epoch)
                 
         # test
-        if epoch%1 == 0:            
-            model.eval_mode()
-            test_results = padim_eval(checkpoint_path, CLASS_NAMES, train_loader_list, test_loader_list)    
-            print('========================================================') 
-            for class_name in CLASS_NAMES:
-                logging.debug("Epoch: {} | loss:{:.5f} | IMAGE_AUROC:{:.3f} | PIXEL_AUROC:{:.3f} | Class:{}".format(epoch, loss, test_results[class_name][0], test_results[class_name][1], class_name))                
-                print(' Image-AUROC: {:.3f} | Pixel-AUROC: {:.3f} | Class-Name:{}'.format(test_results[class_name][0], test_results[class_name][1], class_name))
-            print(' Average-Image-AUROC: {:.3f} | Average-Pixel-AUROC: {:.3f}'.format(test_results['avg_image_auroc'], test_results['avg_pixel_auroc']))
-            print('========================================================')
+        # if epoch%1 == 0:            
+        #     model.eval_mode()
+        #     test_results = padim_eval(checkpoint_path, CLASS_NAMES, train_loader_list, test_loader_list)    
+        #     print('========================================================') 
+        #     for class_name in CLASS_NAMES:
+        #         logging.debug("Epoch: {} | loss:{:.5f} | IMAGE_AUROC:{:.3f} | PIXEL_AUROC:{:.3f} | Class:{}".format(epoch, loss, test_results[class_name][0], test_results[class_name][1], class_name))                
+        #         print(' Image-AUROC: {:.3f} | Pixel-AUROC: {:.3f} | Class-Name:{}'.format(test_results[class_name][0], test_results[class_name][1], class_name))
+        #     print(' Average-Image-AUROC: {:.3f} | Average-Pixel-AUROC: {:.3f}'.format(test_results['avg_image_auroc'], test_results['avg_pixel_auroc']))
+        #     print('========================================================')

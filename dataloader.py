@@ -99,13 +99,12 @@ class Manufacturing_dataset(torch.utils.data.Dataset):
             mask = torch.zeros([1, self.input_size, self.input_size]).float()
             label = torch.tensor([0], dtype=torch.float32)            
             
-            # NSA synthetic image 
-            # if torch.rand(1).numpy()[0] > 0.5:
+            # NSA synthetic image             
             augmented_image, augmented_mask, ori_source_image = patch_ex(ima_dest=np.asarray(image), ima_src=np.asarray(ano_image), **self.self_sup_args)            
             augmented_image = self.norm_transform(augmented_image)
             augmented_mask[augmented_mask!=0]=1
             augmented_mask = self.to_tensor(augmented_mask).float()       
-            # return augmented_image, augmented_mask, class_name, class_label
+            
                                
             # PERLIN synthetic image
             # anomaly_source_idx = torch.randint(0, len(self.anomaly_source_paths), (1,)).item()                        
